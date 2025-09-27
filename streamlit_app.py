@@ -10,7 +10,7 @@ def load_inference():
     return ModelInference(model_path="best_model.pth", force_cpu=False)
 
 inference = load_inference()
-
+                            
 # -------------------------------
 # Function to get random suggestions
 # -------------------------------
@@ -64,7 +64,7 @@ suggestion_pairs = st.session_state["suggestion_pairs"]
 suggestion_inputs = [p[0] for p in suggestion_pairs]
 
 # -------------------------------
-# Streamlit UI
+# Streamlit UI     
 # -------------------------------
 st.title("🟢 Urdu ↔ Roman Translator")
 st.write("Enter text below to get translation or pick a **suggested input**.")
